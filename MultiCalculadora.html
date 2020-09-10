@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiCalculadora</title>
+    <link rel="stylesheet" href="multicalculadora.css">
+    <script src="multicalculadora.js"></script>
+</head>
+<body>
+    <fieldset>
+     <legend>MultiCalculadora</legend>
+    <div id="card">
+        <form action="" method="" target="" name="multicalculadora">
+            <div class="Mostrar">
+                <input id="IMC" type="radio" name="Escolha" checked value="IMC" onclick="mostra()">IMC
+                <input id="Retangulo" type="radio" name="Escolha"  value="Retangulo" onclick="mostra()">Retângulo
+                <input id="Circulo" type="radio" name="Escolha" value="Circulo" onclick="mostra()"> Círculo
+            </div>
+            <div id="MostrarIMC" name="MostrarIMC" style="display: block;">
+                <div  class="Mostrar"><label>Peso: </label><input id="Peso" name="Peso" type="number"></div>
+                <div  class="Mostrar"><label>Altura: </label><input id="AlturaIMC" name="AlturaIMC" type="number"></div>
+                <div class="Mostrar"><button type="button" onclick="CalcularIMC()">Calcular</button></div>
+                <div class="Mostrar" id="CalculoImc" name="IMC"></div>
+            </div>
+            <div id="MostrarRetangulo" name="MostrarRetangulo" style="display: none;">
+                <div  class="Mostrar"><label>Base: </label><input id="Base" name="Base" type="number"></div>
+                <div  class="Mostrar"><label>Altura: </label><input id="AlturaRetangulo" name="AlturaRetangulo" type="number"></div>
+                <div class="Mostrar"><button type="button" onclick="CalcularRetangulo()">Calcular</button></div>
+                <div class="Mostrar" id="CalculoRetangulo" name="RETANGULO"></div>
+            </div>
+            <div id="MostrarCirculo" name="MostrarCirculo" style="display: none;">
+                <div  class="Mostrar"><label>Raio: </label><input id="Raio" name="Raio" type="number"></div>
+                <div class="Mostrar"><button type="button" onclick="CalcularCirculo()">Calcular</button></div>
+                <div class="Mostrar" id="CalculoCirculo" name="Circulo"></div>
+            </div>
+        </form>
+    </div></fieldset>
+</body>
+</html>
